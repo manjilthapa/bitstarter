@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
   response.send('Hello World2!');
 });
 
-app.readFile('/etc/passwd', function (err, data) {
+app.readFile('index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
 });
