@@ -115,11 +115,11 @@
     
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class = "navbar navbar-inverse navbar-fixed-top">
-      <div class ="navbar-inner">
-	<div class = "container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="container">
 	  <button type="button" class="btn btn-navbar"
-		  data-toggle="collapse" data-target= ".nav-collapse">
+		  data-toggle="collapse" data-target=".nav-collapse">
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
@@ -132,9 +132,9 @@
 	     <li><a href="#contact">Contact</a></li>
 	   </ul>
 	 </div> <!----- .nav-collpase ---->
-	</div>
-       </div>
-      </div>
+	</div> <!-- End of /.container -->
+       </div> <!-- End of /.navbar-inner -->
+      </div> <!-- End of /.navbar-fixed-top --->
 
     
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
@@ -149,65 +149,75 @@
       <div class="row-fluid heading">
 	<div class="span12">
 	  <h1>Product</h1>
-	 </div>
-	</div>
+	</div> <!-- End of /.span12 -->
+      </div> <!-- End of /.row-fluid heading -->
+
       <div class="row-fluid subheading">
 	<div class="span12">
 	  <!-- Speical typography from Bootstrap for lead paragraph -->
 	  <!-- http://twitter.github.io/bootstraps/base-css.html#typography -->
 	  <p class="lead">One sentence description. </p>
-	</div>
-      </div>
+	</div> <!-- End of /.span12 -->
+      </div> <!-- End of /.row-fluid subheading -->
+
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+	</div> <!-- End of /.span5 video  -->
 
         <!-- We define a new 'action' div to contain statistics, order, and share buttons. -->
         <div class="span5 actions">
 	  <div class="span8 offset2">
 	    <div class="statistics">
+	      
 	      <div class="span4">
 		<!-- linediv-l and linediv-r give dividing lines that look
 		     different in horizontal and vertical layouts, illustrating
 		     media queries. --->
 		<div class="linediv-l">
 		  <h3>1000</h3> <p>backers</p>
-		</div>
-	     </div><!-- end /.span4 -->
-	     <div class="span4">
+		</div>  <!-- End of /.linediv-l  -->
+	      </div><!-- end /.span4 -->
+	      
+	      <div class="span4">
 		<div class ="linediv-c">
 		  <h3>$6000 </h3><p>of $10,000</p>
-		</div>
-	     </div><!-- end /.span4 -->
-	     <div class="span4">
-	       <h3>10</h3> <p>days left </p>
-	     </div><!-- end /.span4 -->
-	   </div><!-- end /.statistics -->
-	 </div><!-- end /.span8 --->
-       </div> <!-- end /.span5 --->
+		</div>  <!-- End of /.linediv-c  -->
+	      </div><!-- end /.span4 -->
+	      
+	      <div class="span4">
+		<div class="linediv-r">
+		  <h3>10</h3> <p>days left </p>
+		</div> <!--- End of /.linediv-r --->
+	      </div><!-- end /.span4 -->
+
+	    </div><!-- end /.statistics -->
+	  </div><!-- end /.span8 --->
 	
-       <div class="span10 offset1">
+	<div class="span10 offset1">
 	 <!--Bootstrap progess bar -->
 	 <!--http://twitter.github.io/bootstrap/components.html#progress -->
 	 <div class="thermometer progress active">
 	   <div class="bar bar-success" style="width:60%;"></div>
 	   <div class="bar bar-warning" style="width: 40%;"></div>
-	 </div>
-       </div>
-       <div class="span6 offset3 order">
+	 </div> <!-- End of /.thermometer -->
+	</div> <!-- End of /.span10 offset1 -->
+	
+	<div class="span6 offset3 order">
 	 <!-- Standard Bootstrap button. --->
 	 <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
 	 <button class="btn btn-success btn-large">Preorder </button>
-       </div>
-       <div class="span8 offset2 social">
+	</div> <!-- end of /.span6 orrset3 -->
+	
+	<div class="span8 offset2 social">
 	 <!-- Social buttons are not included in default Bootstrap. -->
 	 <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
 	 <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
 	 <button class="btn btn-facebook"><i class="icon-facebook"></i> |Facebook </button>
-       </div>
-      </div>
-     </div>
+	</div> <!- End of /.span8 offset 2 -->
+
+       </div> <!-- End of /.span5 actions -->
+     </div> <!-- End of /.row-fluid pitch -->
 
     <!-- Beyond this part the marketing copy begins. -->
     <!-- https://developer.mozilla.org/en-Us/docs/Web/CSS/text-align -->
@@ -250,28 +260,29 @@
 	<div class="accordion" id="accordion2">
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collpase"
+	      <a class="accordion-toggle" data-toggle="collapse"
 		 data-parent="#accordion2" href="#collapseOne">
 		What does FAQ stand for?
 	      </a>
 	    </div> <!-- End of /.accordion-heading -->
 	    
-	    <div id="collapseOne" class="accordion-body collpase">
+	    <div id="collapseOne" class="accordion-body collapse">
 	      <div class="accordion-inner">
 		Frequently Asked Question.
 	      </div> <!-- End of /.accordion-inner -->
 	    </div> <!-- End of /.accordion-body -->
+
 	  </div><!-- End of /.accordion-group -->
 
 	   <div class="accordion-group">
 	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collpase"
+	      <a class="accordion-toggle" data-toggle="collapse"
 		 data-parent="#accordion2" href="#collapseTwo">
 		What's a Frequently Asked Question?
 	      </a>
 	    </div> <!-- End of /.accordion-heading -->
 	    
-	    <div id="collapseTwo" class="accordion-body collpase">
+	    <div id="collapseTwo" class="accordion-body collapse">
 	      <div class="accordion-inner">
 		A question which is commonly asked by users
 
